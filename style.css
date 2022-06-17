@@ -7,7 +7,7 @@ html, body {
 body {
 	margin: 0;
 	justify-content: center;
-  background-color: #DEDBD2;
+  background-color: white;
   font-family: 'Playfair Display';
 }
 
@@ -28,7 +28,6 @@ body {
 
 .bar li {
   display: inline;
-  float: center;
 
 }
 .bar li a {
