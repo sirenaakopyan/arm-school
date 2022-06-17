@@ -28,7 +28,7 @@ body {
 
 .bar li {
   display: inline;
-
+  float: none;
 }
 .bar li a {
   display: block;
