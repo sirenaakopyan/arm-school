@@ -15,26 +15,31 @@ body {
 .bar {
   overflow: hidden;
   list-style-type: none;
-  margin: 0;
+  margin: auto;
   background-color: #333;
   position: fixed;
   width: 100%;
+  padding: 15px;
+
+
 }
 
 .bar a:hover {
-  background: #B0C4B1;
+  background: white;
   color: black;
 }
 
 .bar li {
   display: inline;
-  float: none;
-}
+  padding: 40px;
+
+ }
 .bar li a {
-  display: block;
+  display: inline;
   color: white;
   text-align: center;
-  padding: 14px 26px;
+  padding: 26px;
   text-decoration: none;
-  margin-right: 60px;
+  margin: auto;
+
 }
