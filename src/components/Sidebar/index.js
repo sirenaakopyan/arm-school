@@ -2,19 +2,19 @@ import React from 'react';
 import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarLink, SidebarMenu, SideBtnWrap, SidebarRoute } from './SidebarElements';
 
 
-const Sidebar = () => {
+const Sidebar = ({ isOpen, toggle}) => {
   return (
-    <SidebarContainer>
-        <Icon>
+    <SidebarContainer isOpen={isOpen} onClick={toggle}>
+        <Icon onClick={toggle}>
             <CloseIcon />
         </Icon>
         <SidebarWrapper>
             <SidebarMenu>
-                <SidebarLink to="about">About</SidebarLink>
-                <SidebarLink to="school">School</SidebarLink>
-                <SidebarLink to="camp">Camp</SidebarLink>
-                <SidebarLink to="calendar">Calendar</SidebarLink>
-                <SidebarLink to="getInvolved">Get Involved</SidebarLink>
+                <SidebarLink to="about" onClick={toggle}>About</SidebarLink>
+                <SidebarLink to="school" onClick={toggle}>School</SidebarLink>
+                <SidebarLink to="camp" onClick={toggle}>Camp</SidebarLink>
+                <SidebarLink to="calendar" onClick={toggle}>Calendar</SidebarLink>
+                <SidebarLink to="getInvolved" onClick={toggle}>Get Involved</SidebarLink>
             </SidebarMenu>
             <SideBtnWrap>
                 <SidebarRoute to='/enroll'>Enroll</SidebarRoute>
