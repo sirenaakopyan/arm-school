@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/arm-school/static/css/main.50bca76d.css",
-    "main.js": "/arm-school/static/js/main.b1c5340e.js",
+    "main.js": "/arm-school/static/js/main.3dfd27f8.js",
     "static/media/intro_vid.mp4": "/arm-school/static/media/intro_vid.cfab46ef429e73e17831.mp4",
     "index.html": "/arm-school/index.html",
     "main.50bca76d.css.map": "/arm-school/static/css/main.50bca76d.css.map",
-    "main.b1c5340e.js.map": "/arm-school/static/js/main.b1c5340e.js.map"
+    "main.3dfd27f8.js.map": "/arm-school/static/js/main.3dfd27f8.js.map"
   },
   "entrypoints": [
     "static/css/main.50bca76d.css",
-    "static/js/main.b1c5340e.js"
+    "static/js/main.3dfd27f8.js"
   ]
 }
