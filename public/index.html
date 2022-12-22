@@ -19,22 +19,11 @@
     <link rel="stylesheet" type="text/css" href="arm-school/src/App.css" />
     <meta charset="utf-8" />
   </head>
-  
+       
   <body>
     <H1>Hello there my friend this is a test</H1>
-    <div id="root">
-      <Route path="..\src\App.js" component="{App.js}" />
-    </div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <div id="root"></div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     
@@ -45,7 +34,28 @@
     <script src="../src/components/Navbar/index.js"></script>
     <script src="../src/components/Navbar/NavbarElements.js"></script>
 
+    <script>
+      import React from 'react';
+      import ReactDOM from 'react-dom/client';
+      import App from './App';
+
+      ReactDOM.render(
+        <App />,
+        document.getElementById('root')
+      );
+    </script>
 
 
   </body>
 </html>
+
+    <!--
+          This HTML file is a template.
+          If you open it directly in the browser, you will see an empty page.
+    
+          You can add webfonts, meta tags, or analytics to this file.
+          The build step will place the bundled scripts into the <body> tag.
+    
+          To begin the development, run `npm start` or `yarn start`.
+          To create a production bundle, use `npm run build` or `yarn build`.
+        -->
