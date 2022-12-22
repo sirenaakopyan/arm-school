@@ -1,6 +1,6 @@
 {
   "homepage": "https://sirenaakopyan.github.io/arm-school",
-  "main": "src/index.js",
+  "main": "arm-school/src/App.js",
   "name": "arm-school",
   "version": "0.1.0",
   "private": true,
