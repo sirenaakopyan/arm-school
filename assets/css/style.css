@@ -1219,3 +1219,9 @@ form .button-area {
   top: calc(100% - 12rem);
 }
 /* scroll top ends */
+
+@media (max-width: 1156px) {
+  .image {
+      display: none; /* Hide the image class */
+  }
+}
