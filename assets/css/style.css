@@ -755,6 +755,27 @@ header .navbar ul li a:hover {
 }
 /* work section ends */
 
+/* enroll section begins */
+.google-form-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio by default */
+  height: 0;
+  overflow: hidden;
+}
+
+.google-form-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+/* enroll section ends */
+
+
 /* experience section starts */
 .experience .timeline {
   position: relative;
