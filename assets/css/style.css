@@ -773,8 +773,14 @@ header .navbar ul li a:hover {
   border: 0;
 }
 
-
+/* Adjusting height for mobile devices */
+@media only screen and (max-width: 768px) {
+  .google-form-wrapper {
+    padding-bottom: 150%; /* Increase this percentage to make the iframe longer */
+  }
+}
 /* enroll section ends */
+
 
 
 /* experience section starts */
