@@ -1221,7 +1221,7 @@ form .button-area {
 /* scroll top ends */
 
 @media (max-width: 1156px) {
-  .image {
+  .nodisplayimg {
       display: none; /* Hide the image class */
   }
 }
