@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Welcome to The Seattle Armeian School's Official Page" />
@@ -12,8 +13,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- Favicon -->
-  <link id='favicon' rel="shortcut icon" href="./assets/images/logo-nobackground-1000.png" type="image/x-png">
   <title>Seattle Armenian School</title>
 </head>
 
@@ -45,29 +44,14 @@
 
   <!-- hero section starts -->
   <section class="home" id="home">
-    <!-- floating arrows -->
-    <!-- <div id="particles-js"></div> -->
 
     <div class="content">
       <h2>Welcome to the<br />Seattle <span>Armenian</span> School</h2>
-      <p>With us, your kids will learn Armenian <span class="typing-text"></span></p>
-      <a href="#about" class="btn"><span>About Us</span>
-        <i class="fas fa-arrow-circle-down"></i>
-      </a>
-      <div class="socials">
-        <ul class="social-icons">
-          <li><a class="email" aria-label="Email" href="mailto:school@armenianchurchwa.org"><i
-                class="fas fa-envelope"></i></a></li>
-          <!-- facebook -->
-          <li><a class="facebook" aria-label="Facebook" href="https://m.facebook.com/groups/2370977892922128/"
-              target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-          <!-- <li><a class="dev" aria-label="Dev" href="https://dev.to/jigarsable" target="_blank"><i class="fab fa-dev"></i></a></li> -->
-        </ul>
-      </div>
+      <p>Rooted in history, growing towards the future.<span class="typing-text"></span></p>
     </div>
     <div class="image" >
       <!-- fix logo on screen -->
-      <img draggable="false" class="nodisplayimg" src="./assets/images/logo-nobackground-1000.png" alt="">
+      <img draggable="false" class="nodisplayimg" src="./logo-nobackground-1000.png" alt="">
     </div>
   </section>
   <!-- hero section ends -->
@@ -76,24 +60,17 @@
   <!-- about section starts -->
   <section class="about" id="about">
     <h2 class="heading">About <span>Us</span></h2>
-
     <div class="row">
-
-      
       <div class="content">
         <h3>We are the Sourp Harutyun Armenian School</h3>
-        <p>At the Armenian School of Seattle, we are dedicated to fostering a vibrant community that embraces the rich
-          heritage of Armenian culture, language, and history.
-          By intertwining academics with a deep appreciation for our shared background, we empower our students to
-          become lifelong learners and ambassadors of Armenian values in the broader Washington community and beyond.
-        </p>
+        <p>We are dedicated to fostering a vibrant community that embraces the rich heritage of Armenian culture, language, and history. By intertwining academics with a deep appreciation for our shared background, we empower our students to become lifelong learners and ambassadors of Armenian values in the broader Washington community and beyond.</p>
       </div>
-
       <div class="image">
-        <img draggable="false"  class="displayimg" src="./assets/images/profile2.jpg" alt="">
+        <img src="assets/images/about.JPG" alt="About Us">
       </div>
     </div>
   </section>
+  
 
   <!-- <section class="about" id="teachers">
     <h2 class="heading">Meet Our <span>Teachers</span></h2>
@@ -152,19 +129,21 @@
 
       <div class="box">
         <h3>contact</h3>
-        <p> <i class="fas fa-envelope"></i>school@armenianchurchwa.org</p>
-
+        <p><a href="mailto:school@armenianchurchwa.org"><i class="fas fa-envelope"></i> school@armenianchurchwa.org</a></p>
         <p>
           <i class="fas fa-map-marked-alt" style="display: inline;"></i>
           <a href="https://www.google.com/maps/search/?api=1&query=11423+Redmond+-+Woodinville+Rd+NE,+Redmond,+WA+980526"
             target="_blank" style="display: inline;">
             11423 Redmond - Woodinville Rd NE, Redmond, WA 980526
           </a>
+        </p>    
+        <p>
+          <i class="fab fa-facebook-f" style="display: inline;"></i>
+          <a href="https://m.facebook.com/groups/2370977892922128/"
+            target="_blank" style="display: inline;">
+            Join Our Facebook Group
+          </a>
         </p>
-        <div class="share">
-
-
-        </div>
       </div>
     </div>
 
@@ -196,7 +175,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- scroll reveal anim -->
-  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
 
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 

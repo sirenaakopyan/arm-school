@@ -57,13 +57,13 @@ $(document).ready(function () {
 });
 
 // <!-- typed js effect starts -->
-var typed = new Typed(".typing-text", {
-    strings: ["reading", "writing", "history", "culture"],
-    loop: true,
-    typeSpeed: 50,
-    backSpeed: 25,
-    backDelay: 500,
-});
+// var typed = new Typed(".typing-text", {
+//     strings: ["reading", "writing", "history", "culture"],
+//     loop: true,
+//     typeSpeed: 100,
+//     backSpeed: 50,
+//     backDelay: 500,
+// });
 // <!-- typed js effect ends -->
 
 async function fetchData(type = "skills") {
