@@ -200,7 +200,7 @@ header .navbar ul li a:hover {
 
 /* Styling for the heading */
 .home .content h2 {
-  font-size: 4.5vw; /* Responsive font size based on viewport width */
+  font-size: 5vw; /* Responsive font size based on viewport width */
   font-weight: 800;
   color: #000;
   margin-bottom: 1rem; /* Space below the heading */
@@ -213,32 +213,77 @@ header .navbar ul li a:hover {
 
 /* Styling for the subheading/paragraph */
 .home .content p {
-  font-size: 2vw; /* Responsive font size based on viewport width */
+  font-size: 3vw; /* Responsive font size based on viewport width */
   font-weight: 600;
   color: #000;
   margin-bottom: 2rem; /* Space below the paragraph */
 }
 
-/* Media queries to adjust font sizes on larger screens */
+/* Base styles for smaller mobile devices */
+.home .content h2 {
+  font-size: 6vw; /* Increase as needed for smaller devices */
+}
+
+.home .content p {
+  font-size: 4vw; /* Increase as needed for smaller devices */
+}
+
+/* Larger phones */
+@media (min-width: 375px) {
+  .home .content h2 {
+    font-size: 5.5vw; /* Increase as needed for larger phones */
+  }
+
+  .home .content p {
+    font-size: 3.5vw; /* Increase as needed for larger phones */
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) {
+  .home .content h2 {
+    font-size: 5vw; /* Increase as needed for tablets */
+  }
+
+  .home .content p {
+    font-size: 3vw; /* Increase as needed for tablets */
+  }
+}
+
+/* Small desktops */
 @media (min-width: 1024px) {
   .home .content h2 {
-    font-size: 3.5rem; /* Fixed font size for desktops */
+    font-size: 4.5vw; /* Increase as needed for small desktops */
   }
 
   .home .content p {
-    font-size: 2rem; /* Fixed font size for desktops */
+    font-size: 2.7vw; /* Increase as needed for small desktops */
   }
 }
 
-@media (min-width: 1440px) {
+/* Larger desktops */
+@media (min-width: 1200px) {
   .home .content h2 {
-    font-size: 4rem; /* Larger fixed font size for larger screens */
+    font-size: 4vw; /* Increase as needed for larger desktops */
   }
 
   .home .content p {
-    font-size: 2.5rem; /* Larger fixed font size for larger screens */
+    font-size: 2.5vw; /* Increase as needed for larger desktops */
   }
 }
+
+/* Adjustments for very small devices */
+@media (max-width: 320px) {
+  .home .content h2 {
+    font-size: 7vw; /* Adjust if the text is too small on very small devices */
+  }
+
+  .home .content p {
+    font-size: 4.5vw; /* Adjust if the text is too small on very small devices */
+  }
+}
+
+
 
 /* hero media queries ends*/
 /* hero section end */
@@ -326,6 +371,7 @@ header .navbar ul li a:hover {
     gap: 0;
   }
 }
+
 /* about media queries ends*/
 /* about section ends */
 
