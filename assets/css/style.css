@@ -62,7 +62,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.7rem 10%;
+  padding: 1rem 2rem;
   height: 6.5rem;
   background-color: #fff;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
@@ -357,11 +357,6 @@ section {
   color: #000;
 }
 
-/* Additional span styling if needed */
-.home .content h2 span {
-   /* Highlight color for 'Armenian' */
-}
-
 /* Styling for the subheading/paragraph */
 .home .content p {
   font-size: 3vw; /* Responsive font size based on viewport width */
@@ -443,8 +438,6 @@ section {
 .about {
   background: rgb(255, 255, 255);
 }
-
-
 
 .about .row {
   display: flex;
