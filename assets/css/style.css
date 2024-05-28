@@ -8,7 +8,6 @@
   text-decoration: none;
   outline: none;
   border: none;
-  text-transform: capitalize;
   transition: all 0.2s linear;
 }
 
@@ -67,6 +66,35 @@ header {
   height: 6.5rem;
   background-color: #fff;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
+}
+/* Hide the donate button on smaller screens within header */
+header .donate-btn.desktop-donate {
+  display: none; /* Hide the donate button in desktop version */
+}
+
+/* Add styles for the mobile donate button */
+header .donate-btn.mobile-donate {
+  display: none; /* Initially hidden */
+  margin-top: 2rem;
+  background-color: #007bff;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  /* Hide the desktop donate button */
+  header .donate-btn.desktop-donate {
+    display: none;
+  }
+  /* Show the mobile donate button within the nav menu */
+  header .donate-btn.mobile-donate {
+    display: block;
+  }
 }
 
 header .donate-btn {
@@ -172,10 +200,27 @@ section {
   color: rgb(32, 32, 32);
   font-weight: 800;
   text-align: center;
+  
 }
 .heading span {
   color: #000000;
 }
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: #0e2431;
+}
+
+.logo-img {
+  height: 40px; /* Adjust as needed */
+  margin-right: 10px; /* Space between logo and text */
+}
+
 header .logo {
   font-size: 1.9rem;
   font-weight: 800;
@@ -282,6 +327,13 @@ header .navbar ul li a:hover {
   box-sizing: border-box;
 }
 
+section {
+  min-height: 100vh;
+  padding: 4rem 9%; /* Increased padding for better spacing */
+  text-align: center; /* Center-align text within sections */
+}
+
+
 /* Base styles for .home section */
 .home {
   display: flex;
@@ -304,7 +356,6 @@ header .navbar ul li a:hover {
   font-size: 5vw; /* Responsive font size based on viewport width */
   font-weight: 800;
   color: #000;
-  margin-bottom: 1rem; /* Space below the heading */
 }
 
 /* Additional span styling if needed */
@@ -394,9 +445,6 @@ header .navbar ul li a:hover {
   background: rgb(255, 255, 255);
 }
 
-.about .heading {
-  margin-bottom: 1rem; /* Reduce the bottom margin of the heading */
-}
 
 
 .about .row {
@@ -469,7 +517,6 @@ header .navbar ul li a:hover {
   }
   .about .row {
     padding: 0.5rem;
-    margin-bottom: 7rem;
   }
   .about .row .content {
     padding: 1rem;

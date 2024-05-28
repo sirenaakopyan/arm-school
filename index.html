@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <link rel="icon" href="favicon.ico" />
@@ -15,18 +14,11 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Seattle Armenian School</title>
 </head>
-
 <body>
-
-  <!-- pre loader -->
-  <!-- <div class="loader-container">
-  <img draggable="false" src="./assets/images/preloader.gif" alt="">
-</div> -->
-
   <!-- navbar starts -->
   <header>
     <a class="logo" href="#">
-      <!-- <img src="assets/images/logo.png" alt="Logo" class="nav-logo"> -->
+      <img src="assets/images/logo.png" alt="School Logo" class="logo-img">
       Seattle Armenian School
     </a>
     <div id="menu" class="fas fa-bars"></div>
@@ -38,24 +30,22 @@
         <li><a href="#enroll">Enroll</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+<!-- Add ID to the mobile donate button -->
+      <a href="https://armenianchurchwa.org/armenian-school/" target="_blank" class="donate-btn mobile-donate" id="mobileDonateButton">Donate</a>
     </nav>
     <a href="https://armenianchurchwa.org/armenian-school/" target="_blank" class="donate-btn">Donate</a>
   </header>
   
-
-
   <!-- hero section starts -->
   <section class="home" id="home">
     <div class="content">
       <h2>Welcome to the Holy Resurrection Armenian School of Seattle</h2>
     </div>
     <div class="image">
-      <!-- fix logo on screen -->
       <img draggable="false" class="nodisplayimg" src="./logo-nobackground-1000.png" alt="">
     </div>
-</section>
+  </section>
   <!-- hero section ends -->
-
 
   <!-- about section starts -->
   <section class="about" id="about">
@@ -70,21 +60,6 @@
       </div>
     </div>
   </section>
-  
-
-  <!-- <section class="about" id="teachers">
-    <h2 class="heading">Meet Our <span>Teachers</span></h2>
-    <div class="row">
-      <div class="image">
-        <img draggable="false" src="./assets/images/download.jpeg" alt="">
-      </div>
-      <div class="content">
-      </div>
-    </div>
-  </section> -->
-
-
-
 
   <section class="calendar" id="calendar">
     <h2 class="heading"><span>Calendar</span></h2>
@@ -92,55 +67,37 @@
       <div class="content">
         <iframe src="https://embed.styledcalendar.com/#ogJNNliZJQS1WwHPztD4" title="Styled Calendar" class="styled-calendar-container" style="width: 100%; border: none;" data-cy="calendar-embed-iframe"></iframe>
         <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
+      </div>
     </div>
-
   </section>
 
   <section class="about" id="enroll">
-    <h2 class="heading"><span>Enrollment</span></h2>
+    <h2 class="heading"><span>Enroll</span></h2>
     <div class="row">
       <div class="content">
-        <h3>Enroll your student</h3>
-        <p>To register your child today, fill out the form below.
-          Contact us if you have any questions!
-        </p>
+
+        <p>To register your child today, fill out the form below. Contact us if you have any questions!</p>
         <div class="google-form-wrapper">
           <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSekD0HlsKZzL4PlqSOujNZNDfhw6zep23pYWZucFH4xAhQ4IQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
       </div>
-      
     </div>
   </section>
-  <!-- <section class="about" id="volunteering">
-    <h2 class="heading">Sign up to <span>volunteer</span> at the school</h2>
-    <div class="row">
-      <div class="image">
-        <img draggable="false" src="./assets/images/download.jpeg" alt="">
-      </div>
-      <div class="content">
-      </div>
-    </div>
-  </section> -->
 
-  <!-- footer section starts -->
   <section class="footer" id="contact">
-
     <div class="box-container">
-
-
       <div class="box">
-        <h3>contact</h3>
+        <h3>Contact</h3>
         <p><a href="mailto:school@armenianchurchwa.org"><i class="fas fa-envelope"></i> school@armenianchurchwa.org</a></p>
         <p>
           <i class="fas fa-map-marked-alt" style="display: inline;"></i>
-          <a href="https://www.google.com/maps/search/?api=1&query=11423+Redmond+-+Woodinville+Rd+NE,+Redmond,+WA+980526"
-            target="_blank" style="display: inline;">
+          <a href="https://www.google.com/maps/search/?api=1&query=11423+Redmond+-+Woodinville+Rd+NE,+Redmond,+WA+980526" target="_blank" style="display: inline;">
             11423 Redmond - Woodinville Rd NE, Redmond, WA 980526
           </a>
         </p>    
         <p>
           <i class="fab fa-facebook-f" style="display: inline;"></i>
-          <a href="https://m.facebook.com/groups/2370977892922128/"
-            target="_blank" style="display: inline;">
+          <a href="https://m.facebook.com/groups/2370977892922128/" target="_blank" style="display: inline;">
             Join Our Facebook Group
           </a>
         </p>
@@ -152,12 +109,8 @@
         </p>
       </div>
     </div>
-
   </section>
   <!-- footer section ends -->
-
-
-
 
   <!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
   
@@ -211,9 +164,42 @@
             });
         });
     });
+  document.addEventListener("DOMContentLoaded", function() {
+      let navbarLinks = document.querySelectorAll(".navbar a");
+      let menuButton = document.getElementById("menu");
+      let mobileDonateButton = document.getElementById("mobileDonateButton");
+
+      navbarLinks.forEach(link => {
+          link.addEventListener("click", function(event) {
+              // Prevent the default action
+              event.preventDefault();
+
+              // Remove active class from all links
+              navbarLinks.forEach(innerLink => innerLink.classList.remove("active"));
+
+              // Add active class to the clicked link
+              link.classList.add("active");
+
+              // Smooth scroll to the target section
+              const targetSection = document.querySelector(link.getAttribute("href"));
+              if (targetSection) {
+                  targetSection.scrollIntoView({ behavior: 'smooth' });
+              }
+          });
+      });
+
+      // Ensure mobile donate button works
+      mobileDonateButton.addEventListener("click", function(event) {
+          event.stopPropagation(); // Prevents the menu button event from being triggered
+          window.open("https://armenianchurchwa.org/armenian-school/", "_blank");
+      });
+
+      // Toggle mobile menu
+      menuButton.addEventListener("click", function() {
+          document.querySelector(".navbar").classList.toggle("active");
+      });
+  });
+
   </script>
-
-
 </body>
-
 </html>
