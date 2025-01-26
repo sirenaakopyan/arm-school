@@ -38,9 +38,9 @@ const Navbar = ({ toggleState }) => {
               <NavLinks to='/getInvolved'>Get Involved</NavLinks>
             </NavItem>
           </NavMenu>
-          <NavBtn>
+          {/* <NavBtn>
             <NavBtnLink to='/enroll'>Enroll</NavBtnLink>
-          </NavBtn>
+          </NavBtn> */}
         </NavbarContainer>
       </Nav>
     </>

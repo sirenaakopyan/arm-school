@@ -131,6 +131,48 @@ header .donate-btn:hover {
   #menu {
     display: block;
   }
+/* General navbar styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+#google_translate_element {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+/* Hide default Google Translate styling */
+.goog-te-banner-frame.skiptranslate, 
+.goog-te-gadget-icon {
+  display: none !important;
+}
+
+body {
+  top: 0 !important;
+}
+
+.goog-te-combo {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 14px;
+  margin: 0;
+}
+
 
   header .navbar {
     position: fixed;
